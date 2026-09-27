@@ -11,7 +11,7 @@ export default defineConfig({
 
       manifest: {
 
-        name: 'Ibon Half Coach',
+        name: 'TRIKITRI',
 
         short_name: 'IHC',
 

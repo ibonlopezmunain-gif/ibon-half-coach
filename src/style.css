@@ -40,7 +40,7 @@ body{
 .principal{
   background:linear-gradient(
     135deg,
-    #2563eb,
+    #1457D9,
     #1e40af
   );
   color:white;
@@ -82,7 +82,7 @@ body{
 }
 
 .navigation button:hover{
-  background:#2563eb;
+  background:#1457D9;
 }
 .race-card{
 
@@ -94,7 +94,7 @@ body{
 
   background:#f8fafc;
 
-  border-left:5px solid #2563eb;
+  border-left:5px solid #1457D9;
 
 }
 
@@ -127,7 +127,7 @@ summary{
 
   cursor:pointer;
 
-  color:#2563eb;
+  color:#1457D9;
 
 }
 
@@ -168,7 +168,7 @@ pre{
 
 .block-title:hover{
 
-  background:#2563eb;
+  background:#1457D9;
 
 }
 
@@ -182,7 +182,7 @@ pre{
 
   font-weight:bold;
 
-  color:#2563eb;
+  color:#1457D9;
 
 }
 
@@ -273,7 +273,7 @@ input{
   background:
   linear-gradient(
     90deg,
-    #2563eb,
+    #1457D9,
     #16a34a
   );
 
@@ -292,5 +292,218 @@ input{
   background:#f8fafc;
 
   border-left:4px solid #2563eb;
+
+}
+.club-subtitle{
+
+  margin-top:4px;
+
+  color:#666;
+
+  font-size:14px;
+
+  font-weight:500;
+
+}
+.dashboard{
+
+  display:grid;
+
+  gap:20px;
+
+}
+
+.hero-card{
+
+  background:
+  linear-gradient(
+  rgba(11,31,77,.7),
+  rgba(11,31,77,.7)
+  );
+
+  color:white;
+
+  border-radius:20px;
+
+}
+
+.hero-content{
+
+  padding:10px;
+
+}
+
+.hero-card h1{
+
+  font-size:3rem;
+
+  margin:10px 0;
+
+}
+
+.hero-card h2{
+
+  margin:0;
+
+}
+
+.card{
+
+  background:white;
+
+}
+
+.progress-bar{
+
+  width:100%;
+
+  height:16px;
+
+  background:#e5e7eb;
+
+  border-radius:999px;
+
+  overflow:hidden;
+
+}
+
+.progress-fill{
+
+  height:100%;
+
+  background:#1457D9;
+
+}
+
+@media(min-width:900px){
+
+  .dashboard{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+  }
+
+  .hero-card{
+
+    grid-column:
+    span 2;
+
+  }
+
+}
+.dashboard{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:20px;
+
+}
+
+.hero-card{
+
+  grid-column:1 / -1;
+
+  min-height:240px;
+
+  background:
+  linear-gradient(
+  rgba(11,31,77,.80),
+  rgba(20,87,217,.60)
+  );
+
+  color:white;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+.hero-content{
+
+  width:100%;
+
+}
+
+.hero-card h1{
+
+  font-size:4rem;
+
+  margin:10px 0;
+
+}
+
+.hero-card h2{
+
+  font-size:2rem;
+
+}
+
+.hero-card p{
+
+  font-size:1.1rem;
+
+}
+
+.progress-bar{
+
+  width:100%;
+
+  height:16px;
+
+  background:#e5e7eb;
+
+  border-radius:999px;
+
+  overflow:hidden;
+
+}
+
+.progress-fill{
+
+  height:100%;
+
+  background:#1457D9;
+
+}
+
+@media(max-width:768px){
+
+  .hero-card h1{
+
+    font-size:2.8rem;
+
+  }
+
+}
+
+.hero-card{
+
+  grid-column:1 / -1;
+
+  min-height:280px;
+
+  background:
+    linear-gradient(
+      rgba(11,31,77,.70),
+      rgba(20,87,217,.55)
+    ),
+    url('/vitoria.jpg');
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  color:white;
+
+  display:flex;
+
+  align-items:center;
 
 }

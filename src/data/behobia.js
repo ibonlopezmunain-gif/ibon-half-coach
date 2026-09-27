@@ -2,350 +2,258 @@ export const behobiaPlan = [
 
   {
     semana: "Semana 1",
-    objetivo: "Volver a crear rutina",
 
-    volumenRunning: 28,
-volumenNatacion: 2000,
-crossfit: 2,
+    objetivo: "Volver a crear rutina y recuperar continuidad",
+
+    volumenRunning: 36,
+    volumenNatacion: 2200,
+    volumenBici: 60,
+    crossfit: 2,
 
     sesiones: [
 
       {
-        dia: "Martes",
-        titulo: "8x400m",
-        detalles: `
-Calentamiento:
-15 min suaves
+        dia: "Lunes",
 
-Principal:
-8 x 400m
+        titulo: "CrossFit + Natación opcional",
+
+        detalles: `
+🎯 Objetivo
+
+Trabajo general de fuerza.
+
+🏊 Natación opcional 1500m
+
+🟢 Calentamiento
+
+200 libre
+
+100 espalda
+
+100 libre respirando cada 3 brazadas
+
+🔵 Técnica
+
+4x50 Catch-Up
+
+4x50 Un brazo
+
+4x50 Puños cerrados
+
+15" recuperación
+
+🏊 Principal
+
+4x100 suaves
+
+❄️ Enfriamiento
+
+200 suaves
+`
+      },
+
+      {
+        dia: "Martes",
+
+        titulo: "6x1000",
+
+        detalles: `
+🎯 Objetivo
+
+Mejorar VO2max y ritmo específico.
+
+🔥 Calentamiento
+
+15 min Z2
+(4:55-5:25/km)
+
+Movilidad dinámica
+
+4 progresivos
+
+🏃 Parte principal
+
+6 x 1000m
 
 Ritmo:
-3:55-4:00/km
+4:05/km
 
 Recuperación:
-1 min trote
+90"
 
-RPE:
+💓 RPE
+
 8/10
+
+❄️ Vuelta a la calma
+
+10 min Z1
+(5:40-6:00/km)
 `
       },
 
       {
         dia: "Miércoles",
-        titulo: "Natación 2000m",
+
+        titulo: "Natación 2200m",
+
         detalles: `
-400 suave
+🎯 Objetivo
 
-8 x 50 técnica
+Mejorar eficiencia y resistencia.
 
-8 x 100 ritmo constante
+🟢 Calentamiento
 
-200 suave
+300 libre
+
+100 espalda
+
+🔵 Técnica
+
+4x50 Catch-Up
+
+4x50 Un brazo
+
+4x50 Fingertip Drag
+
+🏊 Principal
+
+8x100
+
+15" recuperación
+
+Ritmo constante
+
+❄️ Enfriamiento
+
+200 suaves
 `
       },
 
       {
         dia: "Jueves",
-        titulo: "3x10 min umbral",
+
+        titulo: "3x10' Umbral",
+
         detalles: `
+🎯 Objetivo
+
+Mejorar capacidad de mantener ritmo de carrera.
+
+🔥 Calentamiento
+
+15 min Z2
+(4:55-5:25/km)
+
+Movilidad
+
+4 progresivos
+
+🏃 Parte principal
+
+3 x 10 min
+
 Ritmo:
 4:15-4:20/km
 
 Recuperación:
-2 min
+2 min trote
+
+💓 RPE
+
+7/10
+
+❄️ Vuelta a la calma
+
+10 min Z1
+(5:40-6:00/km)
+`
+      },
+
+      {
+        dia: "Viernes",
+
+        titulo: "CrossFit",
+
+        detalles: `
+🎯 Objetivo
+
+Trabajo de fuerza general.
+
+💪 Sesión habitual.
+
+Evitar fatiga excesiva.
+`
+      },
+
+      {
+        dia: "Sábado",
+
+        titulo: "Bici Fondo Z2",
+
+        detalles: `
+🎯 Objetivo
+
+Construir resistencia aeróbica.
+
+🚴 Parte principal
+
+60 km
+
+Zona 2
+
+Cadencia:
+85-95 rpm
+
+🍌 Nutrición
+
+60 g HC/h
+
+500-750 ml agua/h
+
+💓 RPE
+
+5/10
 `
       },
 
       {
         dia: "Domingo",
+
         titulo: "Tirada larga",
+
         detalles: `
-14 km
+🎯 Objetivo
 
-FC:
-136-154 ppm
+Construcción aeróbica para Behobia.
 
-Ritmo:
-5:00-5:30/km
-`
-      }
+🔥 Calentamiento
 
-    ]
-  },
+15 min Z2
 
-  {
-    semana: "Semana 2",
-    objetivo: "Construcción",
+🏃 Parte principal
 
-volumenRunning: 32,
-volumenNatacion: 2200,
-crossfit: 2,
-
-    sesiones: [
-
-      {
-        dia: "Martes",
-        titulo: "5x1000",
-        detalles: `
-Ritmo:
-4:00/km
-
-Rec:
-2 min
-`
-      },
-
-      {
-        dia: "Miércoles",
-        titulo: "Natación 2200m",
-        detalles: `
-Técnica + aeróbico
-`
-      },
-
-      {
-        dia: "Jueves",
-        titulo: "Tempo continuo",
-        detalles: `
-30 min
-
-Ritmo:
-4:25/km
-`
-      },
-
-      {
-        dia: "Domingo",
-        titulo: "Tirada larga",
-        detalles: `
 16 km
 
-FC:
-136-154
-`
-      }
-
-    ]
-  },
-
-  {
-    semana: "Semana 3",
-    objetivo: "Carga",
-
-  volumenRunning: 36,
-volumenNatacion: 2500,
-crossfit: 2,
-
-    sesiones: [
-
-      {
-        dia: "Martes",
-        titulo: "6x1000",
-        detalles: `
-4:00/km
-
-Rec:
-2 min
-`
-      },
-
-      {
-        dia: "Miércoles",
-        titulo: "Natación 2500m",
-        detalles: `
-Aeróbico continuo
-`
-      },
-
-      {
-        dia: "Jueves",
-        titulo: "4x12 min",
-        detalles: `
-4:15-4:20/km
-`
-      },
-
-      {
-        dia: "Domingo",
-        titulo: "18 km",
-        detalles: `
-Últimos 5 km
-a 4:35-4:40/km
-`
-      }
-
-    ]
-  },
-
-  {
-    semana: "Semana 4",
-    objetivo: "Semana de descarga",
-
-  volumenRunning: 24,
-volumenNatacion: 1800,
-crossfit: 1,
-
-    sesiones: [
-
-      {
-        dia: "Martes",
-        titulo: "6x400",
-        detalles: `
 Ritmo:
-3:55/km
-`
-      },
+4:55-5:25/km
 
-      {
-        dia: "Miércoles",
-        titulo: "Natación suave",
-        detalles: `
-1800m
-`
-      },
+Últimos 3 km:
 
-      {
-        dia: "Jueves",
-        titulo: "Tempo corto",
-        detalles: `
-20 min
+4:30-4:40/km
 
-4:20/km
-`
-      },
+💓 RPE
 
-      {
-        dia: "Domingo",
-        titulo: "14 km",
-        detalles: `
-Muy cómodo
+6/10
+
+❄️ Vuelta a la calma
+
+10 min suaves
 `
       }
 
     ]
-  },
 
-  {
-    semana: "Semana 5",
-    objetivo: "Pico de forma",
-
-   volumenRunning: 40,
-volumenNatacion: 2200,
-crossfit: 2,
-
-    sesiones: [
-
-      {
-        dia: "Martes",
-        titulo: "3x2000",
-        detalles: `
-4:10/km
-
-Rec:
-2 min
-`
-      },
-
-      {
-        dia: "Miércoles",
-        titulo: "Natación 2200m",
-        detalles: `
-Ritmo constante
-`
-      },
-
-      {
-        dia: "Jueves",
-        titulo: "40 min ritmo Behobia",
-        detalles: `
-4:25-4:30/km
-`
-      },
-
-      {
-        dia: "Domingo",
-        titulo: "20 km",
-        detalles: `
-Simulación parcial
-`
-      }
-
-    ]
-  },
-
-  {
-    semana: "Semana 6",
-    objetivo: "Taper",
-
-   volumenRunning: 18,
-volumenNatacion: 1500,
-crossfit: 1,
-
-    sesiones: [
-
-      {
-        dia: "Martes",
-        titulo: "5x400",
-        detalles: `
-4:00/km
-`
-      },
-
-      {
-        dia: "Miércoles",
-        titulo: "Natación ligera",
-        detalles: `
-1500m
-`
-      },
-
-      {
-        dia: "Jueves",
-        titulo: "25 min suaves",
-        detalles: `
-4 progresivos
-`
-      }
-
-    ]
-  },
-
-  {
-    semana: "Carrera",
-
-    objetivo: "Behobia",
-
-    volumenRunning: 20,
-volumenNatacion: 1000,
-crossfit: 0,
-
-    sesiones: [
-
-      {
-        dia: "Domingo",
-
-        titulo: "Behobia San Sebastián",
-
-        detalles: `
-Objetivo:
-1h30
-
-Ritmo medio:
-4:28/km
-
-FC objetivo:
-168-175 ppm
-
-Primeros 10 km:
-Controlados
-
-Últimos 10 km:
-Progresivos
-`
-      }
-
-    ]
   }
 
 ]

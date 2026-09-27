@@ -1,6 +1,7 @@
 import { athlete } from "../data/athlete.js"
 
 export function createDashboard() {
+  console.log("TRIKITRI DASHBOARD NUEVO")
 
   const peso =
     localStorage.getItem('peso') || '-'
@@ -13,6 +14,9 @@ export function createDashboard() {
 
   const fatiga =
     localStorage.getItem('fatiga') || '-'
+    const atletaActivo =
+  localStorage.getItem('selectedAthlete')
+  || 'Ibon'
 
   let totalChecks = 0
   let completedChecks = 0
@@ -71,120 +75,163 @@ export function createDashboard() {
 
   }
 
-  return `
+return `
 
-    <div class="grid">
+<div class="dashboard">
 
-      <div class="card principal">
+  <div class="card hero-card">
 
-        <h2>🎯 Objetivo Principal</h2>
+    <div class="hero-content">
 
-        <h3>VI Half Vitoria 2027</h3>
+      <h2>🎯 VI HALF VITORIA-GASTEIZ</h2>
 
-        <p>Objetivo: ${athlete.objetivoHalf}</p>
+<p>
+  🏊 1.9 km · 🚴 90 km · 🏃 21.1 km
+</p>
 
-        <h1>
-          ${diasHasta("2027-06-05")} días
-        </h1>
+<p>
+  👤 Atleta activo:
+  <strong>${atletaActivo}</strong>
+</p>
+</p>
+      <h1>
+        ${diasHasta("2027-06-05")} días
+      </h1>
 
-      </div>
+      <p>
+        Objetivo:
+        ${athlete.objetivoHalf}
+      </p>
 
-      <div class="card">
+    </div>
 
-        <h2>🏁 Próximo Objetivo</h2>
-        <div class="card">
+  </div>
 
-  <h2>📅 Esta semana</h2>
+  <div class="card">
 
-  <p>
-    🏃 Running:
-    ${semanaActual.running} km
-  </p>
+    <h2>🏁 Próxima carrera</h2>
 
-  <p>
-    🏊 Natación:
-    ${semanaActual.natacion} m
-  </p>
+    <h3>Behobia San Sebastián</h3>
 
-  <p>
-    💪 CrossFit:
-    ${semanaActual.crossfit}
-  </p>
+    <p>Objetivo: 1h30</p>
 
-  <p>
-    ✅ Cumplimiento:
-    ${cumplimiento}%
-  </p>
+    <h1>
+      ${diasHasta("2026-11-08")} días
+    </h1>
 
-</div>
+  </div>
 
-        <h3>Behobia San Sebastián</h3>
+  <div class="card">
 
-        <p>Objetivo: 1h30</p>
+    <h2>📅 Esta semana</h2>
 
-        <h1>
-          ${diasHasta("2026-11-08")} días
-        </h1>
+    <p>
+      🏃 Running:
+      ${semanaActual.running} km
+    </p>
 
-      </div>
+    <p>
+      🏊 Natación:
+      ${semanaActual.natacion} m
+    </p>
 
-      <div class="card">
+    <p>
+      🚴 Bici:
+      70 km
+    </p>
 
-        <h2>💓 Estado Actual</h2>
+    <p>
+      💪 CrossFit:
+      ${semanaActual.crossfit}
+    </p>
 
-        <ul>
-          <li>VO₂max: ${athlete.vo2max}</li>
-          <li>FC reposo: ${athlete.fcReposo}</li>
-          <li>VFC: ${athlete.hrv}</li>
-          <li>Estado: ${athlete.estado}</li>
-        </ul>
+  </div>
 
-      </div>
+  <div class="card">
 
-      <div class="card">
+    <h2>✅ Cumplimiento</h2>
 
-        <h2>📊 Seguimiento</h2>
+    <div class="progress-bar">
 
-        <ul>
-          <li>⚖️ Peso: ${peso} kg</li>
-          <li>❤️ FC: ${fc} ppm</li>
-          <li>😴 Sueño: ${sueno} h</li>
-          <li>🔥 Fatiga: ${fatiga}/10</li>
-        </ul>
-
-      </div>
-
-      <div class="card">
-
-        <h2>✅ Cumplimiento</h2>
-
-        <div class="progress-bar">
-
-          <div
-            class="progress-fill"
-            style="width:${cumplimiento}%"
-          ></div>
-
-        </div>
-
-        <h1>${cumplimiento}%</h1>
-
-        <p>
-
-          ${
-            cumplimiento >= 90
-              ? "🟢 Excelente"
-              : cumplimiento >= 70
-              ? "🟡 Bueno"
-              : "🔴 Bajo"
-          }
-
-        </p>
-
+      <div
+        class="progress-fill"
+        style="width:${cumplimiento}%">
       </div>
 
     </div>
 
-  `
+    <h1>${cumplimiento}%</h1>
 
+    <p>
+      ${
+        cumplimiento >= 90
+          ? "🟢 Excelente"
+          : cumplimiento >= 70
+          ? "🟡 Bueno"
+          : "🔴 Mejorable"
+      }
+    </p>
+
+  </div>
+
+  <div class="card">
+
+    <h2>💓 Estado actual</h2>
+
+    <ul>
+
+      <li>VO₂max: ${athlete.vo2max}</li>
+
+      <li>
+        FC reposo:
+        ${athlete.fcReposo}
+      </li>
+
+      <li>
+        VFC:
+        ${athlete.hrv}
+      </li>
+
+      <li>
+        Estado:
+        ${athlete.estado}
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="card">
+
+    <h2>📊 Seguimiento</h2>
+
+    <ul>
+
+      <li>
+        ⚖️ Peso:
+        ${peso} kg
+      </li>
+
+      <li>
+        ❤️ FC:
+        ${fc} ppm
+      </li>
+
+      <li>
+        😴 Sueño:
+        ${sueno} h
+      </li>
+
+      <li>
+        🔥 Fatiga:
+        ${fatiga}/10
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+`
 }
